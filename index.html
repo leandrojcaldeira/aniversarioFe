@@ -42,6 +42,11 @@
 
   <style>
     /* Estilo de Luzes de Varal */
+    .lights-string {
+      background-image: radial-gradient(circle, #fff 20%, transparent 20%);
+      background-size: 20px 20px;
+    }
+    
     @keyframes bulbGlow {
       0%, 100% { opacity: 1; transform: scale(1); filter: drop-shadow(0 0 6px rgba(255, 223, 0, 0.8)); }
       50% { opacity: 0.6; transform: scale(0.95); filter: drop-shadow(0 0 2px rgba(255, 223, 0, 0.3)); }
@@ -80,4 +85,281 @@
       <div class="bulb w-5 h-7 bg-pink-500 rounded-full border border-pink-700 shadow-lg"></div>
       <div class="bulb w-5 h-7 bg-yellow-400 rounded-full border border-yellow-600 shadow-lg"></div>
       <div class="bulb w-5 h-7 bg-cyan-400 rounded-full border border-cyan-600 shadow-lg"></div>
-      <div class="bulb w-5 h-7 bg-rose-500 rounded
+      <div class="bulb w-5 h-7 bg-rose-500 rounded-full border border-rose-700 shadow-lg"></div>
+      <div class="bulb w-5 h-7 bg-amber-300 rounded-full border border-amber-500 shadow-lg"></div>
+      <div class="bulb w-5 h-7 bg-yellow-400 rounded-full border border-yellow-600 shadow-lg"></div>
+      <div class="bulb w-5 h-7 bg-pink-500 rounded-full border border-pink-700 shadow-lg"></div>
+    </div>
+  </div>
+
+  <!-- Container Principal -->
+  <main class="max-w-xl mx-auto px-4 relative z-10 -mt-6">
+
+    <!-- Header / Banner Principal -->
+    <header class="text-center bg-gradient-to-b from-amber-100 via-orange-100 to-amber-200 rounded-3xl p-6 shadow-2xl border-4 border-amber-300 relative overflow-hidden mb-6">
+      <!-- Decorações de Folhas Tropicais -->
+      <span class="absolute -top-4 -left-4 text-4xl transform -rotate-45">🌿</span>
+      <span class="absolute -top-4 -right-4 text-4xl transform rotate-45">🌺</span>
+      <span class="absolute -bottom-4 -left-4 text-4xl transform rotate-12">🌺</span>
+      <span class="absolute -bottom-4 -right-4 text-4xl transform -rotate-12">🌿</span>
+
+      <div class="inline-block bg-pink-600 text-white text-xs font-bold uppercase tracking-widest px-4 py-1 rounded-full shadow-md mb-2">
+        Aniversário Especial
+      </div>
+
+      <!-- Título Farofa da Fê -->
+      <div class="relative my-2">
+        <h1 class="font-display text-6xl md:text-7xl font-bold text-gray-900 leading-tight transform -rotate-2 drop-shadow-md">
+          Farofa <span class="block text-5xl md:text-6xl text-pink-600">da Fê</span>
+        </h1>
+        <div class="absolute -right-2 top-2 text-4xl animate-bounce">
+          🍺
+        </div>
+      </div>
+
+      <!-- Subtítulo -->
+      <p class="font-display text-2xl md:text-3xl font-bold text-amber-900 mt-3 leading-snug">
+        Vou comemorar mais um ano de vida e quero muito ter você por aqui! <span class="text-pink-600">♥</span>
+      </p>
+    </header>
+
+    <!-- Cards de Atrações e Detalhes -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+      
+      <!-- Card: Teremos Truco (com Imagem) -->
+      <div class="bg-white/95 rounded-2xl p-4 shadow-xl border-2 border-orange-400 flex flex-col items-center justify-center text-center transform hover:scale-[1.02] transition-transform">
+        <div class="w-full h-48 rounded-xl overflow-hidden mb-3 border border-orange-200 shadow-inner bg-amber-50">
+          <img 
+            src="https://raw.githubusercontent.com/google/generative-ai-docs/main/images/cards.jpg" 
+            alt="Baralho Truco" 
+            class="w-full h-full object-cover"
+            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1541278107931-e006523892df?q=80&w=600&auto=format&fit=crop';"
+          />
+        </div>
+        <h3 class="font-title text-2xl font-bold text-pink-600 tracking-wide uppercase">
+          Teremos Truco!
+        </h3>
+        <p class="text-xs text-gray-600 mt-1">Prepare seu parceiro e venha pro ZAP!</p>
+      </div>
+
+      <!-- Card: Traga sua Bebida -->
+      <div class="bg-white/95 rounded-2xl p-4 shadow-xl border-2 border-teal-400 flex flex-col items-center justify-center text-center transform hover:scale-[1.02] transition-transform">
+        <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center text-teal-600 text-3xl mb-2 shadow-inner">
+          🍹
+        </div>
+        <h3 class="font-title text-xl font-bold text-teal-700 tracking-wide uppercase">
+          Traga a sua Bebida!
+        </h3>
+        <p class="text-gray-700 font-semibold text-sm mt-1">
+          De preferência a sua bebida favorita! <span class="text-pink-500">♥</span>
+        </p>
+      </div>
+
+      <!-- Card: Data e Horário -->
+      <div class="bg-white/95 rounded-2xl p-4 shadow-xl border-2 border-pink-400 flex flex-col items-center justify-center text-center transform hover:scale-[1.02] transition-transform">
+        <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center text-pink-600 text-3xl mb-2 shadow-inner">
+          📅
+        </div>
+        <h3 class="font-title text-xl font-bold text-pink-600 uppercase">
+          Quando?
+        </h3>
+        <p class="text-lg font-bold text-gray-800">Dia 07/11 (Sábado)</p>
+        <p class="text-sm font-semibold text-pink-600 bg-pink-50 px-3 py-1 rounded-full mt-1 border border-pink-200">
+          das 12:00 às 18:00
+        </p>
+      </div>
+
+      <!-- Card: Não Poderá Levar Crianças -->
+      <div class="bg-white/95 rounded-2xl p-4 shadow-xl border-2 border-rose-400 flex flex-col items-center justify-center text-center transform hover:scale-[1.02] transition-transform">
+        <div class="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center text-rose-600 text-3xl mb-2 shadow-inner relative">
+          🚫 👶
+        </div>
+        <h3 class="font-title text-xl font-bold text-rose-600 uppercase">
+          Não Poderá Levar Crianças!
+        </h3>
+        <p class="text-gray-700 font-bold text-sm mt-1">
+          Festa somente para adultos! <span class="text-pink-500">♥</span>
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Placa de Madeira Avisos Importantes -->
+    <div class="wood-sign rounded-2xl p-5 text-white text-center mb-6 relative overflow-hidden">
+      <div class="absolute -right-6 -bottom-6 opacity-10 text-8xl">🪵</div>
+      <p class="font-display text-2xl md:text-3xl font-bold text-amber-200 leading-snug">
+        "Convidado não convida..."
+      </p>
+      <p class="font-title text-lg md:text-xl text-white font-semibold mt-1">
+        É só pra quem foi chamado! <span class="text-pink-300">♥</span>
+      </p>
+    </div>
+
+    <!-- Card de Endereço -->
+    <div class="bg-white/95 rounded-2xl p-5 shadow-xl border-2 border-amber-400 text-center mb-6">
+      <div class="inline-flex items-center justify-center w-12 h-12 bg-red-100 text-red-600 rounded-full mb-2">
+        <i class="fa-solid fa-location-dot text-2xl"></i>
+      </div>
+      <h3 class="font-title text-xl font-bold text-gray-800">Onde será?</h3>
+      <p class="font-semibold text-pink-600 text-lg mt-1">Espaço do Léo</p>
+      <p class="text-gray-600 text-sm mt-1">
+        R. José Gomes Domingues, 585 - Antigo 220<br>
+        Jaqueline, Belo Horizonte - MG
+      </p>
+      
+      <a 
+        href="https://maps.google.com/?q=Rua+Jose+Gomes+Domingues+585+Jaqueline+Belo+Horizonte" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white font-bold text-sm px-5 py-2.5 rounded-full shadow-md mt-4 transition-all hover:shadow-lg transform hover:-translate-y-0.5"
+      >
+        <i class="fa-solid fa-map-location-dot"></i>
+        Abrir no Google Maps
+      </a>
+    </div>
+
+    <!-- Card Principal de RSVP / Formulário -->
+    <section class="bg-white rounded-3xl p-6 md:p-8 shadow-2xl border-4 border-pink-500 relative">
+      
+      <!-- Selo do Prazo -->
+      <div class="bg-gradient-to-r from-pink-600 to-rose-600 text-white text-center rounded-2xl p-3 shadow-lg mb-6 border-2 border-pink-300">
+        <p class="text-xs uppercase font-bold tracking-wider">Atenção ao Prazo</p>
+        <h2 class="font-title text-xl md:text-2xl font-bold">
+          CONFIRME SUA PRESENÇA até o dia <span class="underline decoration-yellow-400 decoration-4">30/10</span>
+        </h2>
+      </div>
+
+      <!-- Formulário Integrado Formspree -->
+      <form id="rsvpForm" action="https://formspree.io/f/xppqbedd" method="POST" class="space-y-4">
+        
+        <div>
+          <label for="nome" class="block text-sm font-bold text-gray-700 mb-1">
+            Seu Nome Completo *
+          </label>
+          <input 
+            type="text" 
+            id="nome" 
+            name="Nome" 
+            required 
+            placeholder="Digite seu nome..." 
+            class="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 outline-none transition-all font-medium text-gray-800"
+          >
+        </div>
+
+        <div>
+          <label for="whatsapp" class="block text-sm font-bold text-gray-700 mb-1">
+            Seu WhatsApp
+          </label>
+          <input 
+            type="tel" 
+            id="whatsapp" 
+            name="WhatsApp" 
+            placeholder="(31) 99999-9999" 
+            class="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 outline-none transition-all font-medium text-gray-800"
+          >
+        </div>
+
+        <div>
+          <label class="block text-sm font-bold text-gray-700 mb-1">
+            Você vai comparecer? *
+          </label>
+          <div class="grid grid-cols-2 gap-3">
+            <label class="flex items-center justify-center gap-2 p-3 rounded-xl border-2 border-gray-200 cursor-pointer hover:bg-pink-50 transition-all has-[:checked]:border-pink-500 has-[:checked]:bg-pink-50 has-[:checked]:text-pink-700 font-bold text-gray-700">
+              <input type="radio" name="Confirmação" value="Sim, vou com certeza!" required class="accent-pink-600 w-4 h-4">
+              Sim! Com certeza 🎉
+            </label>
+            <label class="flex items-center justify-center gap-2 p-3 rounded-xl border-2 border-gray-200 cursor-pointer hover:bg-gray-50 transition-all has-[:checked]:border-gray-500 has-[:checked]:bg-gray-100 has-[:checked]:text-gray-800 font-bold text-gray-700">
+              <input type="radio" name="Confirmação" value="Infelizmente não poderei ir" required class="accent-gray-600 w-4 h-4">
+              Não poderei ir 😢
+            </label>
+          </div>
+        </div>
+
+        <div>
+          <label for="mensagem" class="block text-sm font-bold text-gray-700 mb-1">
+            Recado para a Fê (Opcional)
+          </label>
+          <textarea 
+            id="mensagem" 
+            name="Mensagem" 
+            rows="3" 
+            placeholder="Deixe uma mensagem carinhosa..." 
+            class="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 outline-none transition-all font-medium text-gray-800"
+          ></textarea>
+        </div>
+
+        <button 
+          type="submit" 
+          id="btnSubmit"
+          class="w-full bg-gradient-to-r from-pink-600 via-rose-500 to-orange-500 hover:from-pink-700 hover:to-orange-600 text-white font-title text-xl font-bold py-4 rounded-xl shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2"
+        >
+          <span>Confirmar Presença</span>
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+
+      </form>
+
+      <!-- Mensagem de Sucesso Personalizada -->
+      <div id="successMessage" class="hidden text-center py-6">
+        <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-3 text-3xl">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+        <h3 class="font-title text-2xl font-bold text-gray-800 mb-2">
+          Presença confirmada com sucesso!
+        </h3>
+        <p class="font-display text-2xl text-pink-600 font-bold">
+          Mal posso esperar para comemorar com você! 🎉✨
+        </p>
+      </div>
+
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="text-center mt-8 text-amber-900 font-semibold text-sm">
+      <p>Vai ser incrível ter você lá! <span class="text-pink-600">♥</span></p>
+      <p class="text-xs text-amber-800/80 mt-1">Farofa da Fê • Aniversário Especial</p>
+    </footer>
+
+  </main>
+
+  <!-- Script para submissão assíncrona do formulário Formspree -->
+  <script>
+    const form = document.getElementById('rsvpForm');
+    const btnSubmit = document.getElementById('btnSubmit');
+    const successMessage = document.getElementById('successMessage');
+
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      
+      // Feedback visual ao clicar
+      btnSubmit.disabled = true;
+      btnSubmit.innerHTML = 'Enviando... <i class="fa-solid fa-spinner fa-spin"></i>';
+
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          form.classList.add('hidden');
+          successMessage.classList.remove('hidden');
+        } else {
+          alert('Ops! Houve um problema ao enviar sua confirmação. Por favor, tente novamente.');
+          btnSubmit.disabled = false;
+          btnSubmit.innerHTML = '<span>Confirmar Presença</span> <i class="fa-solid fa-paper-plane"></i>';
+        }
+      } catch (error) {
+        alert('Ops! Ocorreu um erro de conexão. Tente novamente.');
+        btnSubmit.disabled = false;
+        btnSubmit.innerHTML = '<span>Confirmar Presença</span> <i class="fa-solid fa-paper-plane"></i>';
+      }
+    });
+  </script>
+</body>
+</html>
