@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farofa da Fê - Confirmação de Presença</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fredoka:wght@400;600;700&family=Montserrat:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandPink: '#FF2E7E',
+                        brandYellow: '#FFD200',
+                        brandOrange: '#FF6B00',
+                        brandTurquoise: '#00C9A7',
+                        brandPurple: '#845EC2',
+                        brandBg: '#FFF3E0'
+                    },
+                    fontFamily: {
+                        handwriting: ['Caveat', 'cursive'],
+                        display: ['Fredoka', 'sans-serif'],
+                        body: ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Background sunset gradient inspired by the invitation */
+        body {
+            background: linear-gradient(180deg, #FF7E5F 0%, #FEB47B 30%, #FFE0B2 70%, #FFF3E0 100%);
+            min-height: 100vh;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Animated Lights Effect */
+        .string-light {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            display: inline-block;
+            animation: glow 1.5s infinite alternate ease-in-out;
+        }
+
+        @keyframes glow {
+            0% { opacity: 0.5; filter: drop-shadow(0 0 2px #fff); }
+            100% { opacity: 1; filter: drop-shadow(0 0 8px currentColor); }
+        }
+
+        /* Wooden Sign styling */
+        .wood-panel {
+            background: #8D5B4C;
+            background-image: repeating-linear-gradient(0deg, rgba(255,255,255,0.05), rgba(255,255,255,0.05) 10px, transparent 10px, transparent 20px);
+            border: 4px solid #5C3A2E;
+            box-shadow: 4px 6px 0px rgba(0,0,0,0.2);
+        }
+
+        /* Decorative tropical elements floating */
+        .floating {
+            animation: float 4s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-8px) rotate(2deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+    </style>
+</head>
+<body class="text-gray-800 pb-12 relative overflow-x-hidden">
+
+    <!-- Top Lights Strand -->
+    <div class="w-full bg-slate-900/40 py-2 px-4 flex justify-between items-center border-b border-amber-300/30 relative z-20 shadow-md">
+        <div class="flex space-x-3 sm:space-x-6 mx-auto">
+            <span class="string-light bg-yellow-300 text-yellow-300" style="animation-delay: 0.1s"></span>
+            <span class="string-light bg-pink-500 text-pink-500" style="animation-delay: 0.3s"></span>
+            <span class="string-light bg-cyan-400 text-cyan-400" style="animation-delay: 0.5s"></span>
+            <span class="string-light bg-orange-400 text-orange-400" style="animation-delay: 0.2s"></span>
+            <span class="string-light bg-emerald-400 text-emerald-400" style="animation-delay: 0.4s"></span>
+            <span class="string-light bg-yellow-300 text-yellow-300" style="animation-delay: 0.6s"></span>
+            <span class="string-light bg-pink-500 text-pink-500" style="animation-delay: 0.1s"></span>
+            <span class="string-light bg-cyan-400 text-cyan-400" style="animation-delay: 0.3s"></span>
+            <span class="string-light bg-orange-400 text-orange-400" style="animation-delay: 0.5s"></span>
+        </div>
+    </div>
+
+    <!-- Background Decorative Tropical Leaves -->
+    <div class="absolute top-0 left-0 -ml-12 -mt-8 text-emerald-700/25 pointer-events-none select-none z-0">
+        <i class="fa-solid fa-leaf text-8xl sm:text-9xl transform -rotate-45"></i>
+    </div>
+    <div class="absolute top-0 right-0 -mr-12 -mt-8 text-emerald-700/25 pointer-events-none select-none z-0">
+        <i class="fa-solid fa-leaf text-8xl sm:text-9xl transform rotate-45 scale-x-[-1]"></i>
+    </div>
+
+    <main class="max-w-3xl mx-auto px-4 pt-6 relative z-10">
+
+        <!-- Header / Banner Section -->
+        <header class="text-center my-6 relative">
+            <div class="inline-block bg-amber-400 text-slate-900 font-bold px-4 py-1.5 rounded-full shadow-lg transform -rotate-3 mb-2 border-2 border-white">
+                <i class="fa-solid fa-beer-mug-empty mr-1 text-amber-800"></i> NIVER DA FÊ
+            </div>
+
+            <!-- Main Title -->
+            <h1 class="font-display text-5xl sm:text-7xl font-black text-slate-900 tracking-wider uppercase drop-shadow-md leading-none my-2">
+                FAROFA <span class="text-brandPink block sm:inline font-handwriting normal-case text-6xl sm:text-8xl drop-shadow-lg -mt-2 sm:-ml-2">da Fê</span>
+            </h1>
+
+            <p class="font-handwriting text-2xl sm:text-3xl text-slate-900 font-bold mt-4 max-w-xl mx-auto leading-tight bg-white/40 p-3 rounded-2xl backdrop-blur-sm border border-white/60 shadow-sm">
+                "Vou comemorar mais um ano de vida e quero muito ter você por aqui!" ❤️
+            </p>
+        </header>
+
+        <!-- Highlights & Info Grid -->
+        <section class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8">
+            
+            <!-- Item 1: Truco com SVG das Cartas do Convite -->
+            <div class="bg-gradient-to-br from-pink-500 to-rose-600 text-white p-5 rounded-2xl shadow-lg border-2 border-white/50 flex items-center space-x-4 transform hover:-translate-y-1 transition duration-200 overflow-hidden relative">
+                <div class="w-20 h-20 bg-white/10 rounded-2xl flex items-center justify-center shrink-0 border border-white/30 p-1 bg-rose-950/20">
+                    <!-- SVG Cards (Zap & Espadilha) -->
+                    <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow">
+                        <!-- Card 1: Zap 4 de Paus -->
+                        <g transform="rotate(-12 40 50)">
+                            <rect x="15" y="15" width="42" height="60" rx="4" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+                            <!-- A♠ / 4♣ Corner -->
+                            <text x="18" y="27" font-size="10" font-weight="bold" fill="#000">4</text>
+                            <text x="18" y="36" font-size="9" fill="#000">♣</text>
+                            <text x="36" y="52" font-size="11" font-weight="900" fill="#1E293B" text-anchor="middle">ZAP</text>
+                        </g>
+                        <!-- Card 2: Espadilha Ás de Espadas -->
+                        <g transform="rotate(12 60 50)">
+                            <rect x="42" y="15" width="42" height="60" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+                            <text x="45" y="27" font-size="10" font-weight="bold" fill="#000">A</text>
+                            <text x="45" y="36" font-size="10" fill="#000">♠</text>
+                            <path d="M 63 38 C 55 48 58 56 63 60 C 68 56 71 48 63 38 Z" fill="#0F172A"/>
+                            <rect x="61.5" y="58" width="3" height="6" fill="#0F172A"/>
+                        </g>
+                    </svg>
+                </div>
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-pink-200">Atração</span>
+                    <h3 class="font-display text-2xl font-black uppercase text-yellow-300 tracking-wide">Teremos Truco!</h3>
+                    <p class="text-sm text-pink-100 font-medium">Prepare seu grito de 6 e venha jogar!</p>
+                </div>
+            </div>
+
+            <!-- Item 2: Traga sua Bebida -->
+            <div class="bg-gradient-to-br from-cyan-500 to-teal-600 text-white p-5 rounded-2xl shadow-lg border-2 border-white/50 flex items-center space-x-4 transform hover:-translate-y-1 transition duration-200">
+                <div class="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center text-3xl shrink-0 border border-white/30">
+                    🍺
+                </div>
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-cyan-200">Importante</span>
+                    <h3 class="font-display text-2xl font-black uppercase text-yellow-300 tracking-wide">Traga a sua Bebida!</h3>
+                    <p class="text-sm text-cyan-100 font-medium">De preferência a sua bebida favorita!</p>
+                </div>
+            </div>
+
+            <!-- Item 3: Quando -->
+            <div class="bg-gradient-to-br from-amber-400 to-orange-500 text-slate-900 p-5 rounded-2xl shadow-lg border-2 border-white/50 flex items-center space-x-4 transform hover:-translate-y-1 transition duration-200">
+                <div class="w-16 h-16 bg-white/30 rounded-xl flex items-center justify-center text-3xl shrink-0 border border-white/40">
+                    📅
+                </div>
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-orange-950">Data & Horário</span>
+                    <h3 class="font-display text-2xl font-black uppercase text-white tracking-wide drop-shadow">Dia 07/11 (Sábado)</h3>
+                    <p class="text-sm font-bold text-slate-900">Das 12:00 às 18:00</p>
+                </div>
+            </div>
+
+            <!-- Item 4: Sem Crianças -->
+            <div class="bg-gradient-to-br from-purple-600 to-indigo-700 text-white p-5 rounded-2xl shadow-lg border-2 border-white/50 flex items-center space-x-4 transform hover:-translate-y-1 transition duration-200">
+                <div class="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center text-3xl shrink-0 border border-white/30">
+                    🚫👶
+                </div>
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-purple-200">Aviso</span>
+                    <h3 class="font-display text-xl font-black uppercase text-yellow-300 tracking-wide">Não poderá levar crianças!</h3>
+                    <p class="text-sm text-purple-100 font-medium">Festa somente para adultos! 🍹</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Wooden Sign Reminder & Limit Banner -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center my-8">
+            
+            <!-- Placa de Madeira -->
+            <div class="wood-panel rounded-2xl p-4 text-center text-amber-100 transform -rotate-2 hover:rotate-0 transition duration-300 shadow-xl md:col-span-1">
+                <div class="border-2 border-dashed border-amber-300/40 p-3 rounded-xl">
+                    <p class="font-handwriting text-3xl font-bold leading-tight text-yellow-300">
+                        Convidado não convida...
+                    </p>
+                    <p class="font-handwriting text-2xl text-white mt-1">
+                        ❤️ É só pra quem foi chamado!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Prazo Limite RSVP Banner -->
+            <div class="bg-gradient-to-r from-pink-600 via-rose-500 to-orange-500 text-white p-6 rounded-2xl shadow-xl text-center border-4 border-yellow-300 md:col-span-2 floating">
+                <div class="inline-flex items-center space-x-2 bg-yellow-300 text-slate-900 px-3 py-1 rounded-full font-bold text-xs uppercase mb-2">
+                    <i class="fa-solid fa-clock"></i> Fique Atento
+                </div>
+                <h2 class="font-display text-2xl sm:text-3xl font-black uppercase tracking-wide">
+                    Confirmar Presença <span class="underline decoration-yellow-300">até o dia 30/10</span>
+                </h2>
+                <p class="text-sm text-pink-100 mt-1">Não deixe para a última hora para podermos organizar tudo com carinho!</p>
+            </div>
+
+        </div>
+
+        <!-- Location Section -->
+        <section class="bg-white/80 backdrop-blur-md rounded-3xl p-6 sm:p-8 shadow-xl border-2 border-white my-8">
+            <div class="flex items-start space-x-4">
+                <div class="w-12 h-12 bg-pink-500 text-white rounded-2xl flex items-center justify-center text-2xl shrink-0 shadow-md">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="flex-1">
+                    <span class="text-xs font-bold uppercase tracking-wider text-pink-600">Local da Festa</span>
+                    <h3 class="font-display text-2xl font-bold text-slate-900">Espaço do Léo</h3>
+                    <p class="text-slate-700 font-medium text-sm sm:text-base mt-1">
+                        R. José Gomes Domingues, 585 - Antigo 220<br>
+                        Bairro Jaqueline — Belo Horizonte / MG
+                    </p>
+                    <div class="mt-4">
+                        <a href="https://maps.google.com/?q=R.+José+Gomes+Domingues,+585+-+Jaqueline,+Belo+Horizonte+-+MG" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-5 py-2.5 rounded-xl shadow-lg transition duration-200 text-sm">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <span>Abrir no Google Maps</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RSVP Form Section -->
+        <section id="rsvp-section" class="bg-slate-900 text-white rounded-3xl p-6 sm:p-10 shadow-2xl border-4 border-yellow-400 relative overflow-hidden my-8">
+            <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-pink-500/20 rounded-full blur-2xl pointer-events-none"></div>
+
+            <div class="text-center mb-8">
+                <span class="bg-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">Formulário RSVP</span>
+                <h2 class="font-display text-3xl sm:text-4xl font-black text-yellow-400 mt-2">CONFIRME SUA PRESENÇA</h2>
+                <p class="text-slate-300 text-sm mt-1">Preencha seus dados abaixo até 30/10</p>
+            </div>
+
+            <!-- Confirmation Form -->
+            <form id="rsvpForm" class="space-y-5">
+                <!-- Nome Completo -->
+                <div>
+                    <label for="fullName" class="block text-sm font-bold text-slate-200 mb-1">Seu Nome Completo *</label>
+                    <div class="relative">
+                        <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400">
+                            <i class="fa-solid fa-user"></i>
+                        </span>
+                        <input type="text" id="fullName" required placeholder="Ex: Maria Silva" class="w-full pl-10 pr-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition">
+                    </div>
+                </div>
+
+                <!-- Telefone / WhatsApp -->
+                <div>
+                    <label for="phone" class="block text-sm font-bold text-slate-200 mb-1">WhatsApp / Telefone *</label>
+                    <div class="relative">
+                        <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-slate-400">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                        </span>
+                        <input type="tel" id="phone" required placeholder="(31) 99999-9999" class="w-full pl-10 pr-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent transition">
+                    </div>
+                </div>
+
+                <!-- Radio Confirmação -->
+                <div>
+                    <label class="block text-sm font-bold text-slate-200 mb-2">Você vai à festa? *</label>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <label class="flex items-center space-x-3 p-3.5 rounded-xl bg-slate-800 border border-slate-700 cursor-pointer hover:bg-slate-750 transition">
+                            <input type="radio" name="attending" value="sim" checked class="w-5 h-5 text-yellow-400 focus:ring-yellow-400 bg-slate-900 border-slate-600">
+                            <span class="font-bold text-emerald-400">🎉 Sim, eu vou!</span>
+                        </label>
+                        <label class="flex items-center space-x-3 p-3.5 rounded-xl bg-slate-800 border border-slate-700 cursor-pointer hover:bg-slate-750 transition">
+                            <input type="radio" name="attending" value="nao" class="w-5 h-5 text-yellow-400 focus:ring-yellow-400 bg-slate-900 border-slate-600">
+                            <span class="font-bold text-rose-400">😢 Infelizmente não poderei</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Mensagem para Fê -->
+                <div>
+                    <label for="message" class="block text-sm font-bold text-slate-200 mb-1">Deixe um recado carinhoso para a Fê ❤️</label>
+                    <textarea id="message" rows="3" placeholder="Escreva aqui seu recadinho especial..." class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="w-full bg-gradient-to-r from-yellow-400 via-amber-400 to-orange-500 hover:from-yellow-300 hover:to-orange-400 text-slate-950 font-display font-black text-lg py-4 px-6 rounded-xl shadow-xl transform active:scale-98 transition duration-200 uppercase tracking-wider flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>Confirmar Presença</span>
+                </button>
+            </form>
+
+            <!-- Feedback Message Container -->
+            <div id="feedbackMsg" class="hidden mt-6 p-4 rounded-xl text-center font-bold"></div>
+        </section>
+
+        <!-- Final Warm Message -->
+        <div class="text-center my-10">
+            <h3 class="font-handwriting text-4xl sm:text-5xl font-bold text-slate-900 drop-shadow">
+                "Vai ser incrível ter você lá!" ❤️✨
+            </h3>
+        </div>
+
+    </main>
+
+    <footer class="text-center text-xs text-slate-700/80 mt-12 py-4">
+        Farofa da Fê 🎉 | Aniversário Especial 07/11
+    </footer>
+
+    <script>
+        const STORAGE_KEY = 'farofa_fe_rsvp_list';
+
+        document.getElementById('rsvpForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const fullName = document.getElementById('fullName').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const attending = document.querySelector('input[name="attending"]:checked').value;
+            const message = document.getElementById('message').value.trim();
+
+            if(!fullName || !phone) {
+                showFeedback('Por favor, preencha o nome e o WhatsApp.', 'error');
+                return;
+            }
+
+            const newEntry = {
+                id: Date.now(),
+                fullName,
+                phone,
+                attending,
+                message,
+                createdAt: new Date().toLocaleDateString('pt-BR') + ' ' + new Date().toLocaleTimeString('pt-BR', {hour: '2-digit', minute:'2-digit'})
+            };
+
+            const currentList = getStoredGuests();
+            currentList.push(newEntry);
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(currentList));
+
+            if(attending === 'sim') {
+                showFeedback('Presença confirmada com sucesso! Mal posso esperar para comemorar com você!', 'success');
+            } else {
+                showFeedback('Sentiremos sua falta! Obrigado por avisar a Fê ❤️', 'info');
+            }
+
+            document.getElementById('rsvpForm').reset();
+        });
+
+        function getStoredGuests() {
+            const data = localStorage.getItem(STORAGE_KEY);
+            return data ? JSON.parse(data) : [];
+        }
+
+        function showFeedback(msg, type) {
+            const box = document.getElementById('feedbackMsg');
+            box.classList.remove('hidden', 'bg-emerald-500', 'bg-rose-500', 'bg-amber-500', 'text-white', 'text-slate-900');
+            
+            if(type === 'success') {
+                box.classList.add('bg-emerald-500', 'text-white');
+            } else if(type === 'error') {
+                box.classList.add('bg-rose-500', 'text-white');
+            } else {
+                box.classList.add('bg-amber-400', 'text-slate-900');
+            }
+
+            box.textContent = msg;
+            box.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    </script>
+</body>
+</html>
